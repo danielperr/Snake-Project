@@ -44,8 +44,8 @@ var best = 0;
 var fontSize = 46;
 // Another fps int to comper.
 var anotherfps;
-// on off switch in order to w8 some time before picking 
-// a new location
+// on off switch in order to w8 some time 
+//before picking a new location
 var SetTimeInterval = false;
 // Song part + the sliders
 var song;
@@ -111,9 +111,9 @@ function draw() {
 		anotherfps = frameCount;
 		SetTimeInterval = true;
 		food.x = width + scl;
-		fontSize = 72;
+		fontSize = 62;
 	}
-	if (frameCount > anotherfps+2 && SetTimeInterval == true) {
+	if (frameCount > anotherfps+2.5 && SetTimeInterval == true) {
 		fontSize = 46;
 		if (frameCount > anotherfps+10 && SetTimeInterval == true) {
 			// w8 some time before putting another food.
@@ -142,11 +142,11 @@ function keyPressed() {
   }
 	
 	if (keyCode === 49) {
-		if ( volAmount <= 0.05) {
+		if ( volAmount >= 0.05) {
 			volAmount -= 0.05
 		}
 	} else if (keyCode === 50) {
-		if (volAmount >= 0.45) {
+		if (volAmount <= 0.45) {
 			volAmount += 0.05
 		}
   }
