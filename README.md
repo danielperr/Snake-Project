@@ -12,5 +12,5 @@ A snake based game powered by P5.js.
 * Move with the arrow keys.
 * Press [1] or [2] in the keyboard to lower / raise the volume.
 
-
+## Notes
 * Please download this repo in order to play - the usage of an online viewer might not work properly
