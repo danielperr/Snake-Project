@@ -13,4 +13,4 @@ A snake based game powered by P5.js.
 * Press [1] or [2] in the keyboard to lower / raise the volume.
 
 
-*The game is of course under developement and will have many issues. We will love to hear your opinion!*
+* Please download this repo in order to play - the usage of an online viewer might not work properly
